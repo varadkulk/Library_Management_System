@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/ico" href="images/logo.png" />
+</head>
+
+<body>
+    <div class="middle">
+        <div class="centered">
+            <div class="container" style="transform: scale(1.15);">
+                <div id="card" class="card">
+                    <!--Book-->
+                    <div class="main_library">
+                        <h1>Library Management System</h1>
+                        <form>
+                            <input type="text" class="input-text admin" id="username" placeholder="Username / email"
+                                style="margin-top: 35px;">
+                            <input type="password" class="input-text password" id="password" placeholder="Password">
+                        </form>
+                        <button class="submit" id="login">Submit</button>
+                        <div class="extra" id="flip">Add new account</div>
+						<script>
+							var card = document.getElementById('card');
+							flip.onclick = function() {
+								card.style.transform = 'rotateY(180deg)';
+							}
+						</script>
+                    </div>
+                    <!--SignUp Page-->
+					<div class="back">
+                        <div style="top: 0%;position: relative; left: 27%; height: 30%; width: 30%;">
+                                <img src="images/userDefault.png" style="border-radius: 50%;box-shadow: 5px 5px #4d4d4d50; height: 100%; width: auto">
+                            </div>
+                            <div style="top: -10%; position: relative; left: -15%;">
+                                    <img src="images/importSRC.png" id="sudo" style="transform: scale(0.6); cursor: pointer;">
+                                    <h1></h1>
+                                <script>
+                                    var file = document.getElementById('profile');
+                                    sudo.onclick = function() {
+                                        profile.click();
+                                    }
+                                </script>
+                            </div>
+                            <form >
+                                <input type="text" class="input-text user" id="usrName" placeholder="User Name" >
+                                <input type="text" class="input-text email" id="email" placeholder="Email">
+                                <input type="password" id="pswd" class="input-text password" placeholder="Password">
+                                <input type="password" id="repswd" class="input-text password" placeholder="Re-Password">
+                            </form>
+                            <button class="submit" id="signup" s>SIGN UP</button>
+                            <div class="extra   " id="flipRev">
+                            Already have an account?<br>Login now
+                            </div>
+                            <script>
+                                var card = document.getElementById('card');
+                                flipRev.onclick = function() {
+                                    card.style.transform = 'rotateY(360deg)';
+                                }
+                            </script>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left">
+        <div class="centered">
+            <div class="container" style="transform: scale(1.15);">
+                <div id="card" class="card">
+                    <!--Book-->
+                    <div class="front">
+                        <h1>Student</h1>
+                        <form>
+                            <input type="text" class="input-text usr" id="fname" placeholder="First Name"
+                                style="margin-top: 35px;">
+                            <input type="text" class="input-text usr" id="mname" placeholder="Middle Name">
+                            <input type="text" class="input-text usr" id="lname" placeholder="Last Name">
+                        </form>
+                        <button class="submit" id="login">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="centered">
+            <div class="container" style="transform: scale(1.15);">
+                <div id="card" class="card">
+                    <!--Book-->
+                    <div class="front">
+                        <h1>Book</h1>
+                        <form>
+                            <input type="int" class="input-text book" id="bookId" placeholder="Book ID"
+                                style="margin-top: 35px;">
+                            <input type="text" class="input-text book" id="bookname" placeholder="Book Name">
+                        </form>
+                        <button class="submit" id="login">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
