@@ -1,3 +1,4 @@
+
 body, html {
 	min-height: 100%;
 	font-family: "Product Sans"
@@ -8,7 +9,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 .middle {
 	height: 100%;
 	width: 30%;
@@ -36,14 +36,13 @@ body {
 
 .left {
 	height: 100%;
-	width: 30%;
+	width: 50%;
 	position: absolute;
 	z-index: 1;
 	top: 0;
 	overflow-x: hidden;
-	padding-top: 0px;
 	left: 0%;
-	background-color: #ffffff00;
+	background-color: #ffffff;
 }
 
 .centered {
@@ -63,12 +62,12 @@ body {
 }
 
 .card {
-	position: right;
+	position: center;
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
-	background-color: #ffffff00;
+	 background-color: #ffffff00;
 }
 
 .front {
@@ -95,15 +94,14 @@ body {
 	border-radius: 15px;
 	width: 100%;
 	height: 100%;
-	transform: translate(0%, 10%);
+	transform: translate(0%, 10%)
+	;
 	backface-visibility: hidden;
 	background: #ffffffcc;
 	color: #5b4836ff;
-	padding-top: 20px;
 }
 
-.main_library h1 {
-	padding-top: 10%;
+.main_library h1 { 
 	margin: auto;
 	width: 67%;
 	height: 30%;
@@ -120,7 +118,6 @@ body {
 	background: #ffffffcc;
 	color: #5b4836ff;
 	transform: rotateY(180deg);
-	padding-top: 20px;
 }
 
 .back h1 {
