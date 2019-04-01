@@ -2,11 +2,46 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0%;
+  height: 0%;
+  background-color: #3498db;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2ecc71;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #3498db;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #2ecc71;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #2ecc71;
+}
+
+::-webkit-resizer {
+  background-color: #2ecc71;
+}
+
 body {
   font-family: Product Sans;
   margin: 0;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(8, 100%);
 }
 
 section>* {
@@ -51,13 +86,13 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   scroll-snap-align: start;
 }
 
 section:after {
   content: ' ';
   position: absolute;
-  left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
@@ -76,12 +111,17 @@ ul {
   z-index: 5;
 }
 
-li a {
+a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.padding {
+  padding: 0px;
+  padding-bottom: 120px;
 }
 
 .normal {
@@ -123,8 +163,12 @@ li a {
   font-weight: 500;
 }
 
-.box h2, h3, h4 {
-  color: white;
+.box h2, h4 {
+  color: #3498db;
+}
+
+.box h3 {
+  color: #2ecc71;
 }
 
 .box input[type="text"], .box input[type="password"], .box input[type="email"], .box input[type="number"] {
@@ -225,4 +269,134 @@ input[type=number]:hover::-webkit-inner-spin-button, input[type=number]:focus::-
   outline: none;
   color: white;
   cursor: pointer;
+}
+
+.rightarrow {
+  cursor: pointer;
+  height: 120px;
+  right: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 80px;
+}
+
+.rightarrow-top, .rightarrow-bottom {
+  background-color: #3498db;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.rightarrow-top:after, .rightarrow-bottom:after {
+  background-color: #2ecc71;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.rightarrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.rightarrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.rightarrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.rightarrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.rightarrow:hover .rightarrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.rightarrow:hover .rightarrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.rightarrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+.leftarrow {
+  cursor: pointer;
+  height: 120px;
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 80px;
+}
+
+.leftarrow-top, .leftarrow-bottom {
+  background-color: #3498db;
+  height: 4px;
+  right: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.leftarrow-top:after, .leftarrow-bottom:after {
+  background-color: #2ecc71;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.leftarrow-top {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.leftarrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.leftarrow-bottom {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.leftarrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.leftarrow:hover .leftarrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.leftarrow:hover .leftarrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.leftarrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
 }
