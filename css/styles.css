@@ -166,12 +166,14 @@ a {
 .box h2, h4 {
   color: #3498db;
 }
-
+.box span{
+  color: #2ecc71;
+}
 .box h3 {
   color: #2ecc71;
 }
 
-.box input[type="text"], .box input[type="password"], .box input[type="email"], .box input[type="number"] {
+.box input[type="text"], .box input[type="password"], .box input[type="email"], .box input[type="number"] , .box input[type="tel"] {
   border: 0;
   background: none;
   margin: 20px auto;
@@ -189,7 +191,7 @@ a {
   display: block;
 }
 
-.box input [type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus, .box input[type="number"]:focus, .box input[type="text"]:hover, .box input[type="password"]:hover, .box input[type="email"]:hover, .box input[type="number"]:hover {
+.box input [type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus, .box input[type="number"]:focus, .box input[type="number"]:focus , .box input[type="text"]:hover, .box input[type="password"]:hover, .box input[type="email"]:hover, .box input[type="number"]:hover , .box input[type="tel"]:hover {
   width: 280px;
   border-color: #2ecc71;
 }
