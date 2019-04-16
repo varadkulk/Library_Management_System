@@ -23,7 +23,7 @@
             </form>
             <div id="publisher_add" class="overlay">
                 <div class="popup">
-                    <a class="close" href="searchbooks.php">&times;</a>
+                    <a class="close" href="addpublisher.php">&times;</a>
                     <div class="content">
                         <?php
                         if (isset($_POST['add'])) {

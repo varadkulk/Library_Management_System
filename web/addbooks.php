@@ -22,22 +22,21 @@
                 <a href="addpublisher.php">Add Publisher</a>
                 <a href="addmembers.php">Add Member</a>
             </form>
-            <a href="addbooks.php">Search for members</a>
             <div id="book_add" class="overlay">
                 <div class="popup">
-                    <a class="close" href="addbooks .php">&times;</a>
+                    <a class="close" href="addbooks.php">&times;</a>
                     <div class="content">
                         <?php
                         if (isset($_POST['add'])) {
                             $name = $_POST['name'];
                             $author = $_POST['author'];
                             $pid = $_POST['pid'];
-                            $query_publisher = mysqli_query($conn, "SELECT * FROM publisher WHERE name = '$pid';");
+                            $query_publisher = mysqli_query($conn, "SELECT * FROM publisher WHERE id = '$pid';");
                             $count = mysqli_num_rows($query_publisher);
                             if ($count == "0") {
                                 exit('<h2>Publisher not found!</h2>');
                             } else {
-                                echo '<h1>Data Inserted</h1>';
+                                echo '<h1>Book Inserted</h1>';
                                 mysqli_query($conn, "INSERT INTO `book` (`name`, `author`, `publisherid`) VALUES ( '$name', '$author', $pid)");
                             }
                         }

@@ -18,6 +18,7 @@
             <h1>Search</h1>
             <a class="index_a" href="searchmembers.php">Members</a>
             <a class="index_a" href="searchbooks.php">Books</a>
+            <a class="index_a" href="searchpublisher.php">Publisher</a>
         </form>
     </section>
 

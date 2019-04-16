@@ -42,7 +42,6 @@
                         } else if (isset($_POST['search_name'])) {
                             $q = $_POST['name'];
                             $query_book = mysqli_query($conn, "SELECT * FROM book WHERE name = '$q';");
-
                         } else if (isset($_POST['search_author'])) {
                             $q = $_POST['author'];
                             $query_book = mysqli_query($conn, "SELECT * FROM book WHERE author = '$q';");
