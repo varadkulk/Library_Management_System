@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <?php include 'header.php';
+
+    <?php include 'headeradmin.php';
     include "connect.php"; ?>
 
     <section id="search_members">
@@ -33,7 +34,6 @@
                 <input type="tel" id="phone" name="phone" placeholder="Phone No. (include +91)" pattern="[+91]{3}[6-9]{1}[0-9]{9}" required>
                 <input type="submit" name="search_phone" value="Search">
             </form>
-            <a href="searchbooks.php">Search for books</a>
             <div id="member_search" class="overlay">
                 <div class="popup">
                     <a class="close" href="searchmembers.php">&times;</a>
@@ -59,6 +59,7 @@
                         } else {
                             while ($row_member = mysqli_fetch_array($query_member)) {
                                 $bid1 = $row_member['book1id'];
+                                $bid2 = $row_member['book2id'];
                                 $query_book1 = mysqli_query($conn, "SELECT * FROM book1 WHERE id = $bid1");
                                 echo '<h2>ID: <span>' . $row_member['id'] . '</span><br>Name: <span>' .  $row_member['name'] . '</span><br> Email: <span>' . $row_member['email'] . '</span><br> Phone: <span>+' . $row_member['phone'] . '</span></h2><br>';
                             }

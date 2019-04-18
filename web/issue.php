@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php include 'header.php';
+    <?php include 'headeradmin.php';
     include "connect.php"; ?>
 
     <section id="issue">
@@ -46,11 +46,11 @@
                                     echo "Book is already issued";
                                 } else {
                                     if ($memrow['book1id'] == 0) {
-                                        echo "Data Inserted";
+                                        echo "<h2>Book issued</h2>";
                                         mysqli_query($conn, "UPDATE `members` SET `book1id` = $book WHERE `members`.`id` = $mem;");
                                         mysqli_query($conn, "UPDATE `book` SET `status` = 1 WHERE `book`.`id` = $book;");
                                     } else if ($memrow['book2id'] == 0) {
-                                        echo "Data Inserted";
+                                        echo "<h2>Book issued</h2>";
                                         mysqli_query($conn, "UPDATE `members` SET `book2id` = $book WHERE `members`.`id` = $mem;");
                                         mysqli_query($conn, "UPDATE `book` SET `status` = 1 WHERE `book`.`id` = $book;");
                                     } else {

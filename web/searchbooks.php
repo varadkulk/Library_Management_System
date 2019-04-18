@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <?php include 'header.php';
+    <?php 
+        include 'header.php';
     include "connect.php"; ?>
 
     <section id="search_books">

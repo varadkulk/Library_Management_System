@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <?php include 'header.php';
+    <?php include 'headeradmin.php';
     include "connect.php"; ?>
-    <section id="add">
+    <section id="add_books">
         <div class="boxv box">
             <form action="#book_add" method="post">
                 <h1> Add book</h1>

@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Add books</title>
+    <title>Add Publisher</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../images/favicon.ico">
 </head>
 
 <body>
-    <?php include 'header.php';
+    <?php include 'headeradmin.php';
     include "connect.php"; ?>
 
-    <section id="add_books">
+    <section id="add_publisher">
         <div class="boxv box">
             <form action="#publisher_add" method="post">
                 <h1> Add Publisher</h1>

@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <?php include 'header.php';?>
+    <?php
+        include 'header.php';?>
 
     <section id="search">
         <form class="boxv box" action="index.php" method="post">
             <h1>Search</h1>
-            <a class="index_a" href="searchmembers.php">Members</a>
             <a class="index_a" href="searchbooks.php">Books</a>
             <a class="index_a" href="searchpublisher.php">Publisher</a>
         </form>

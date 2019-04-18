@@ -25,8 +25,6 @@
                 <input type="text" name="name" placeholder="Publisher Name" id="name">
                 <input type="submit" name="search_name" value="Search">
             </form>
-            <a href="searchbooks.php">Search for Bookst</a>
-            <a href="searchmembers.php">Search for members</a>
             <div id="publisher_search" class="overlay">
                 <div class="popup">
                     <a class="close" href="searchpublisher.php">&times;</a>

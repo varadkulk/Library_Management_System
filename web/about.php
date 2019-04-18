@@ -7,12 +7,13 @@
     <meta charset="utf-8">
     <title>About</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../images/favicon.ico" >
+    <link rel="icon" href="../images/favicon.ico">
 </head>
 
 <body>
-    <?php include "header.php";
-     ?>
+    <?php
+    include 'header.php';
+    ?>
 
     <section id="about">
         <form class="boxv box" action="../admin/home.php" method="post">
