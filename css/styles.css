@@ -329,7 +329,7 @@ input[type=number]:hover::-webkit-inner-spin-button, input[type=number]:focus::-
 .popup .close:hover {
   color: #2ecc71;
 }
-table{
-color: white;
 
+table {
+  color: white;
 }
